@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Login from "./auth/Login";
+import Login from "./auth/login/Login";
 import Header from "./components/header/Header";
 import PageNotFound from "./pages/PageNotFound";
 import Footer from "./components/Footer";
@@ -14,7 +14,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home/>} />
-        {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
