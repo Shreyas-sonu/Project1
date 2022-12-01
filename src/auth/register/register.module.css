@@ -9,6 +9,7 @@
     height: inherit;
     display: flex;
     margin: 0 auto;
+    box-shadow: 7px 8px 7px 3px #2676b056;
 }
 
 .imageBlock {
@@ -40,7 +41,7 @@
 }
 
 .formBlock>h2 {
-    color: #4b12a9;
+    color: #2677b0;
 }
 
 .formBlock input {
@@ -55,12 +56,12 @@
 }
 
 .formBlock div>button {
-    background-color: #4b12a9;
+    background-color: #2677b0;
     font-weight: bold;
     width: 300px;
     margin-top: 25px;
     border-radius: 25px;
-    border: 2px solid #4b12a9;
+    border: 2px solid #2677b0;
     box-shadow: 1px 1px 3px gray;
 
 }
