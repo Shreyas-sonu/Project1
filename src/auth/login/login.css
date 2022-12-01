@@ -15,8 +15,8 @@ section{
 
 #login_Block{
     width: 70%;
-    height: 70vh;
-    margin-top: 10vh;
+    height: 80vh;
+    margin-top: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ section{
 #welcome_block{
     display: flex;
     flex-basis: 70%;
-    height: 70vh;
+    height: 80vh;
     flex-direction: column;
     justify-content: flex-start;
   background-color: #ababab19;
@@ -43,7 +43,7 @@ section{
 #signup_part{
     display: flex;
     flex-basis: 30%;
-    height: 70vh;
+    height: 80vh;
 
     justify-content: space-between;
 
@@ -84,6 +84,11 @@ img{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 25px;
     background-color: #2677b0;
+}
+
+#input-with-sx{
+    width: 20vw;
+    text-align: center;
 }
 
 #signup_part{
