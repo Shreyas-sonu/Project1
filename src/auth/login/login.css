@@ -31,7 +31,7 @@ section {
   flex-basis: 70%;
   height: 70vh;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-end;
   background-color: #ababab19;
   align-items: center;
 }
@@ -88,7 +88,7 @@ img {
 }
 
 #signup_back {
-  color: white;
+  color: #fff;
   width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -96,12 +96,21 @@ img {
   padding-top: 20px;
   padding: 40px;
 }
+#signup_back a{
+    text-decoration: none;
+}
 
 #signup_back a Button {
+    font-weight: bold;
   margin-top: 140px;
   border-radius: 30px;
-  color: white;
+  color: #2677b0;
   width: 100px;
   margin-bottom: 2px solid white;
-  border: 2px solid white;
+  border: 2px solid #2677b0;
+}
+#signup_back a Button:hover{
+    transition: 0.3s all ease-in-out;
+    border: 2px ridge #111;
+    color: #111;
 }
