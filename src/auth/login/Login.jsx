@@ -6,18 +6,19 @@ import { Link } from "react-router-dom";
 // import Style from "@mui/core/style";
 
 const Login = () => {
+  let handleSubmit=() => {};
   return (
     <div>
       <section>
         <article id="login_Block">
           <div id="main_Block">
-            <aside id="welcome_block">
+            <form onSubmit={handleSubmit} id="welcome_block">
               <h1>Welcome Back</h1>
               <div>
                 <TextField
                   id="input-with-sx"
                   label="Email"
-                  variant="standard" 
+                  variant="standard"
                 />
               </div>
               <div>
@@ -28,10 +29,10 @@ const Login = () => {
                 />
               </div>
               <a href="" id="button">
-                <Button disabled>Forgot Password</Button>
+                <button disabled>Forgot Password</button>
               </a>
-              <a id="sign">Sign In</a>
-            </aside>
+              <button id="sign">Sign In</button>
+            </form>
             <aside id="signup_part">
               <div id="signup_back">
                 <h3>New here? </h3>
@@ -39,7 +40,7 @@ const Login = () => {
                 <h3>amount of new oppurtunites</h3>
 
                 <Link to="/register">
-                  <Button variant="outlined">Sign Up</Button>
+                  <Button type="button" variant="outlined">Sign Up</Button>
                 </Link>
               </div>
             </aside>
