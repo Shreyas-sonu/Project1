@@ -26,21 +26,12 @@ section {
   flex-basis: 100%;
   justify-content: space-between;
 }
-<<<<<<< HEAD
-#welcome_block {
-  display: flex;
-  flex-basis: 70%;
-  height: 70vh;
-  flex-direction: column;
-  justify-content: flex-end;
-=======
 #welcome_block{
     display: flex;
     flex-basis: 70%;
     height: 70vh;
     flex-direction: column;
     justify-content: flex-start;
->>>>>>> 562596c38eb1af4b29224a76830b8771b0e25c67
   background-color: #ababab19;
   align-items: center;
 }
