@@ -6,22 +6,24 @@
 #landingPage{
 width: 100%;
 display: flex;
+padding: 5%;
 align-items: center;
 justify-content: space-around;
-gap: 10%;
+gap: 5%;
 /* height: 100vh; */
 /* background-color: #ababab; */
 }
 #landindPage>h1{
-    flex-basis: 30%;
+    flex-basis: 40%;
 }
 #landingPage>div{
-    flex-basis: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 60%;
     width: 100%;
 }
 footer{
-    position: fixed;
-    bottom: 0;
 }
 .active{
     color: white !important;
