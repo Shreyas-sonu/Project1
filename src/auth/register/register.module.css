@@ -1,4 +1,4 @@
-#registerBlock {
+/* #registerBlock {
   width: 100%;
   height: 80vh;
   margin-top: 5vh;
@@ -29,7 +29,6 @@
   width: 60%;
   padding: 10px;
   text-align: center;
-  /* background-color: rgb(223, 223, 223); */
 }
 
 .formBlock > div {
@@ -69,4 +68,36 @@
   border: 2px solid #4b12a9;
   color: #4b12a9;
   background-color: transparent;
+} */
+
+
+.formMainBlock {
+  margin-top: 20px;
+}
+
+.submitBtn {
+  background-color: #2677b0;
+  border: 2px solid #2677b0 !important;
+  border-radius: 20px !important;
+
+}
+
+.submitBtn:hover {
+  border: 2px solid #2677b0 !important;
+  color: #2677b0 !important;
+  background-color: transparent !important;
+  font-weight: bold !important;
+}
+
+.formMainBlock {
+  display: flex;
+  justify-content: center;
+}
+
+.formMainBlock>aside {
+  background-image: url(./regpage.jpeg);
+  width: 300px;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

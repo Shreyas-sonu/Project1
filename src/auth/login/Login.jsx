@@ -1,11 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "./login.css";
+import { useNavigate } from "react-router-dom";
+
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 // import Style from "@mui/core/style";
 
 const Login = () => {
+  let navigate = useNavigate();
+
+  let [state, setState] = useState({ email: "", password: "" });
+  let { email, password } = state;
+
+  let regEmail = window.sessionStorage.getItem("email");
+  let regPassword = window.sessionStorage.getItem("password");
+
+  let handleInput = e => {
+    let { name, value } = e.target;
+    setState({ ...state, [name]: value });
+  };
+
+  let handleSubmit = e => {
+    // e.preventDefault();
+    try {
+      if (email !== regEmail) {
+        alert("wrong email");
+      } else if (password !== regPassword) {
+        alert("wrong password");
+      } else {
+        navigate("/");
+      }
+    } catch (error) {
+      alert("error");
+    }
+  };
   return (
     <div>
       <section>
@@ -17,7 +46,11 @@ const Login = () => {
                 <TextField
                   id="input-with-sx"
                   label="Email"
-                  variant="standard" 
+                  variant="standard"
+                  onInput={e => {}}
+                  name="email"
+                  value={email}
+                  onInput={handleInput}
                 />
               </div>
               <div>
@@ -25,6 +58,9 @@ const Login = () => {
                   id="input-with-sx"
                   label="Password"
                   variant="standard"
+                  name="password"
+                  value={password}
+                  onInput={handleInput}
                 />
               </div>
               <a href="" id="button">
@@ -36,10 +72,16 @@ const Login = () => {
               <div id="signup_back">
                 <h3>New here? </h3>
                 <h3>Sign Up and discover great</h3>
-                <h3>amount of new oppurtunites</h3>
+                <h3>amount of new opportunities</h3>
 
                 <Link to="/register">
-                  <Button variant="outlined">Sign Up</Button>
+                  <Button
+                    variant="outlined"
+                    type="submit"
+                    onSubmit={handleSubmit}
+                  >
+                    Sign Up
+                  </Button>
                 </Link>
               </div>
             </aside>

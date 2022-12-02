@@ -11,14 +11,14 @@ section {
   align-items: center;
 }
 
-#login_Block{
-    width: 70%;
-    height: 70vh;
-    margin-top: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 3px 2px 8px 0px #2676b082;
+#login_Block {
+  width: 70%;
+  height: 70vh;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 2px 8px 0px #2676b082;
 }
 
 #main_Block {
@@ -26,29 +26,29 @@ section {
   flex-basis: 100%;
   justify-content: space-between;
 }
-<<<<<<< HEAD
-#welcome_block {
+
+HEAD #welcome_block {
   display: flex;
   flex-basis: 70%;
   height: 70vh;
   flex-direction: column;
   justify-content: flex-end;
-=======
-#welcome_block{
-    display: flex;
-    flex-basis: 70%;
-    height: 70vh;
-    flex-direction: column;
-    justify-content: flex-start;
->>>>>>> 562596c38eb1af4b29224a76830b8771b0e25c67
+}
+
+#welcome_block {
+  display: flex;
+  flex-basis: 70%;
+  height: 70vh;
+  flex-direction: column;
+  justify-content: flex-start;
   background-color: #ababab19;
   align-items: center;
 }
 
-#signup_part{
-    display: flex;
-    flex-basis: 30%;
-    height: 70vh;
+#signup_part {
+  display: flex;
+  flex-basis: 30%;
+  height: 70vh;
 
   justify-content: space-between;
 }
@@ -67,9 +67,11 @@ h1 {
 #welcome_block div {
   margin-top: 20px;
 }
+
 #button {
   margin-top: 40px;
 }
+
 img {
   height: 100%;
   width: 100%;
@@ -89,11 +91,11 @@ img {
   background-color: #2677b0;
 }
 
-#signup_part{
-    background-image: url("./../../assets/login.jpeg");
-    
-    background-repeat: no-repeat;
-    background-size: cover;
+#signup_part {
+  background-image: url("./../../assets/login.jpeg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #signup_back {
@@ -105,12 +107,13 @@ img {
   padding-top: 20px;
   padding: 40px;
 }
-#signup_back a{
-    text-decoration: none;
+
+#signup_back a {
+  text-decoration: none;
 }
 
 #signup_back a Button {
-    font-weight: bold;
+  font-weight: bold;
   margin-top: 140px;
   border-radius: 30px;
   color: #2677b0;
@@ -118,8 +121,9 @@ img {
   margin-bottom: 2px solid white;
   border: 2px solid #2677b0;
 }
-#signup_back a Button:hover{
-    transition: 0.3s all ease-in-out;
-    border: 2px ridge #111;
-    color: #111;
+
+#signup_back a Button:hover {
+  transition: 0.3s all ease-in-out;
+  border: 2px ridge #111;
+  color: #111;
 }
