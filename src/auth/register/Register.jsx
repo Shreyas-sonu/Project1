@@ -105,7 +105,10 @@ function Register() {
                 </Grid>
                 <Grid xs={12} sm={12} item marginTop={0}>
                   <FormControl variant="standard" sx={{ maxWidth: 380 }}>
-                    <InputLabel id="demo-simple-select-standard-label">
+                    <InputLabel
+                      id="demo-simple-select-standard-label"
+                      color="secondary"
+                    >
                       Organization *
                     </InputLabel>
                     <Select
@@ -114,6 +117,7 @@ function Register() {
                       value={organization}
                       onChange={handleInput}
                       required
+                      color="secondary"
                       style={{ width: "355px" }}
                     >
                       <MenuItem value="jspiders">J Spiders</MenuItem>
