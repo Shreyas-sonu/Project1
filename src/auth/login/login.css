@@ -31,7 +31,14 @@ section {
   flex-basis: 70%;
   height: 70vh;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+}
+#welcome_block{
+    display: flex;
+    flex-basis: 70%;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: flex-start;
   background-color: #ababab19;
   align-items: center;
 }
