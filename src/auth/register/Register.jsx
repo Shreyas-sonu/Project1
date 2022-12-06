@@ -64,7 +64,8 @@ function Register() {
             maxWidth: 400,
             padding: "1px 5px",
             margin: "0 auto",
-            background: "#f7f7f7",
+            background: "#ababab19",
+            boxShadow: "3px 2px 8px 0px #2676b082",
           }}
           square
         >

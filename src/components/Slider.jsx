@@ -9,7 +9,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const Slider = () => {
   return (
-    <Carousel showThumbs={false} autoPlay infiniteLoop showIndicators={false} showArrows={false} showStatus={false} width="70%" stopOnHover={false} transitionTime="2000">
+    <Carousel showThumbs={false} autoPlay infiniteLoop showIndicators={false} showArrows={false} showStatus={false} width="100%" stopOnHover={false} transitionTime="2000">
       <div>
         <img src={crs1} />
       </div>

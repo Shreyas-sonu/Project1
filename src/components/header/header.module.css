@@ -4,8 +4,8 @@
     width: 100%;
     height: 10vh;
     background-color:#2677B0;
-    /* position: fixed;
-    top: 0; */
+    position: fixed;
+    top: 0;
 }
 #headerBlock nav{
     width: 90%;
@@ -27,11 +27,12 @@
 #headerBlock nav ul{
     width: 100%;
     height: inherit;
-    flex-basis: 20%;
+    flex-basis: 40%;
     list-style: none;
     display: flex;
-    gap: 15%;
+    gap: 5%;
     align-items: center;
+    justify-content: flex-end;
 }
 #headerBlock nav ul li a{
     color: #fff;
@@ -42,6 +43,13 @@
     text-decoration: none;
     /* border-radius: 10px; */
     transition: 0.3s all ease-in-out;
+}
+#headerBlock nav ul li a span{
+    width: 100%;
+    display: inline-block;
+    height: inherit;
+    color: rgb(236, 57, 57);
+    font-size: larger;
 }
 #headerBlock nav ul li a:hover{
     transform: scale(1.1);

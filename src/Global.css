@@ -24,10 +24,30 @@ gap: 5%;
     width: 100%;
 }
 footer{
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    border-top: 3px solid #ababab;
+    bottom: 0;
+    color: #fff;
+    background-image: linear-gradient(to right,#124367,#145381,#1a6092,#2677B0,#428fc6,#4da0db,#75b8e7);
 }
 .active{
     color: white !important;
     font-weight: 900 !important;
     border-bottom: 2px ridge #ababab;
     padding-bottom: 5px!important;
+    color: rgba(255, 255, 255, 0.495);
+}
+#pnf{
+    width: 100%;
+    height: 70vh;
+}
+#pnf>figure{
+    width: 70%;
+    margin: 0 auto;
+}
+#pnf>figure img{
+    width: 100%;
+    object-fit: contain;
 }

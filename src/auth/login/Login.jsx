@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./login.css";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
@@ -6,7 +6,29 @@ import { Link } from "react-router-dom";
 // import Style from "@mui/core/style";
 
 const Login = () => {
-  let handleSubmit=() => {};
+  let [state, setState] = useState({
+    email: '',
+    password:''
+  })
+  let authEmail = window.sessionStorage.getItem("email");
+  let authPass = window.sessionStorage.getItem("password");
+    let token = 111;
+  let { email, password } = state;
+  let handleChange = e => {
+    let { name, value } = e.target;
+    setState({ ...state, [name]: value });
+  };
+  let handleSubmit = e => {
+    e.preventDefault();
+    if (authEmail === email && authPass === password) {
+      console.log("Success");
+      window.sessionStorage.setItem("token", token)
+      window.location.assign("/")
+    }
+    else {
+      alert("Invalid Username or Password")
+    }
+  };
   return (
     <div>
       <section>
@@ -19,14 +41,22 @@ const Login = () => {
                   id="input-with-sx"
                   label="Email"
                   variant="standard"
+                  value={email}
+                  onChange={handleChange}
+                  name="email"
                 />
               </div>
               <div>
                 <TextField
                   id="input-with-sx"
                   label="Password"
+                  type="password"
                   variant="standard"
+                  value={password}
+                  onChange={handleChange}
+                  name="password"
                 />
+                <span></span>
               </div>
               <a href="" id="button">
                 <button disabled>Forgot Password</button>
@@ -40,7 +70,9 @@ const Login = () => {
                 <h3>amount of new oppurtunites</h3>
 
                 <Link to="/register">
-                  <Button type="button" variant="outlined">Sign Up</Button>
+                  <Button type="button" variant="outlined">
+                    Sign Up
+                  </Button>
                 </Link>
               </div>
             </aside>
